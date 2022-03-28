@@ -609,7 +609,7 @@
                                 <input name="Phone No." type="tel" required placeholder="CONTACT NO.(XXX XXXX XXX)" pattern="[6-9]{1}[0-9]{9}">
                             </div>
                             <div class="input-control">
-                                <input name="Subject" type="text" required placeholder="ENTER SUBJECT">
+                                <input name="Subject" id="subject" type="text" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
                                 <textarea name="Message" name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
@@ -623,7 +623,7 @@
                                 </button>
                             </div>
                             <input type="hidden" name="_next" value="http://asutoshpatra.in/">
-                            <input type="hidden" name="_subject" value="New submission!">
+                            <input type="hidden" name="_subject" value=document.getElementById("subject").value>
                             <input type="hidden" name="_autoresponse" value="Thanks for reaching out to me. I will revert back to you as soon as possible.">
                         </form>
                     </div>
